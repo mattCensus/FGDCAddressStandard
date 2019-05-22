@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Revison Info
+    Revision Number            Date Made        Revised By            Revision       
+    1                          1/30/14          Census     Changed the AddressCollection's version attribute from "0.4" to "2.0"
+    2                          1/30/14          Census     Inserted the AddressId element      
+xmlns:gml="http://www.opengis.net/gml"
+xmlns:gml="gml/3.2.1/gml.xsd"
+-->
+
+<addr:AddressCollection version="2.0" xmlns:addr="addr" xmlns:addr_type="addr_type" xmlns:gml="gml"
+    xmlns:smil20="http://www.w3.org/2001/SMIL20/"
+    xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language"
+    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xml="http://www.w3.org/XML/1998/namespace"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tspi="tspi"
+    xmlns:tspi-core="tspi-core" xsi:schemaLocation="addr addr.xsd ">
+
+<!-- Thoroughfare classes (Numbered Thoroughfare, Intersection, Two Number Address Rage, Four Number Address Range, Unnumbered Address -->
+    <NumberedThoroughfareAddress action="ADD">
+        <CompleteLandmarkName Separator="'">
+            <LandmarkName ElementSequenceNumber="1" GNISFeatureID="1658360">CAMP CURRY</LandmarkName>
+            <LandmarkName ElementSequenceNumber="2">YOSEMITE NATIONAL PARK</LandmarkName>
+        </CompleteLandmarkName>
+       <CompleteAddressNumber AddressNumberParity="Even" AttachedElement="Attached">
+            <AddressNumber>123</AddressNumber>
+            <AddressNumberSuffix Separator="">1/2</AddressNumberSuffix>
+        </CompleteAddressNumber> 
+        <CompleteStreetName>
+            <StreetName>Main</StreetName>
+            <StreetNamePostType>Street</StreetNamePostType>
+        </CompleteStreetName>
+         <CompleteSubaddress>
+             <SubaddressElement ElementSequenceNumber="1" SubaddressComponentOrder="1">
+                 <SubaddressType>Building</SubaddressType>
+                 <SubaddressIdentifier>A</SubaddressIdentifier>
+             </SubaddressElement>
+        </CompleteSubaddress>
+        <CompletePlaceName>
+            <PlaceName GNISFeatureID="1658360">Buffalo Lake</PlaceName>
+        </CompletePlaceName>
+        <StateName>MN</StateName>
+        <ZipCode>55314</ZipCode>
+        <MapPosition>
+            <AddressPosition codeList="myUrl">Front Door </AddressPosition>
+            <gml:Point gml:id="p1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                <gml:description>GPS location</gml:description>
+                <gml:pos>49.27 -123.11 </gml:pos>
+            </gml:Point>
+        </MapPosition>
+        <MapPosition>
+            <AddressPosition codeList="myUrl">Back Door </AddressPosition>
+            <gml:Point gml:id="p2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                <gml:description>GPS location</gml:description>
+                <gml:pos>49.27 -123.12 </gml:pos>
+            </gml:Point>
+        </MapPosition>
+        <MapPosition>
+            <AddressPosition>Side Door </AddressPosition>
+            <gml:Point gml:id="p3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                <gml:description>GPS location</gml:description>
+                <gml:pos>49.27 -123.13 </gml:pos>
+            </gml:Point>
+        </MapPosition>
+        <MapPosition>
+            <AddressPosition>Cellar Door </AddressPosition>
+            <gml:Point gml:id="p3a">
+                <gml:description>GPS location</gml:description>
+                <gml:pos>49.27 -123.14 </gml:pos>
+            </gml:Point>
+        </MapPosition>
+        <AddressId>01256</AddressId>
+
+<!-- Address Attributes -->
+        <AddressAuthority>Anytown</AddressAuthority>
+        <RelatedAddressID AddressRelationType="Historical Predecessor">250</RelatedAddressID>
+        <AddressDirectSource>Anytown Water Department</AddressDirectSource>
+        <!-- Address Coordinate Attributes -->
+        <AddressXCoordinate>49.27</AddressXCoordinate>
+        <AddressYCoordinate>-123.11</AddressYCoordinate>
+        <AddressLongitude>-123.11</AddressLongitude>
+        <AddressLatitude>49.27</AddressLatitude>
+        
+        <ANSIStateCountyCode> 01015 </ANSIStateCountyCode>
+        <USNationalGridCoordinate>25</USNationalGridCoordinate>
+        <AddressElevation>25</AddressElevation>
+        <!-- Address Coordinate Reference System attributes -->
+        <AddressCoordinateReferenceSystem>
+            <AddressCoordinateReferenceSystemAuthority>Anytown assessor's office</AddressCoordinateReferenceSystemAuthority>
+            <AddressCoordinateReferenceSystemID>123456</AddressCoordinateReferenceSystemID>
+        </AddressCoordinateReferenceSystem>
+        <!-- Address Parcel Attributes -->
+        <AddressParcelIdentifierSource>Anytown assessor's office</AddressParcelIdentifierSource>
+        <AddressParcelIdentifier>A215</AddressParcelIdentifier>
+        <!-- Address Transportation System Attributes -->
+        <AddressTransportationSystemName>Anytown streets</AddressTransportationSystemName>
+        <AddressTransportationSystemAuthority>Anytown DPW </AddressTransportationSystemAuthority>
+        <AddressTransportationFeatureType>RoadPoint</AddressTransportationFeatureType>
+        <AddressTransportationFeatureID>9087456</AddressTransportationFeatureID>
+        <RelatedTransportationFeatureID>786542</RelatedTransportationFeatureID>
+        <!-- Address Range Attributes -->
+        <AddressRangeType>Actual</AddressRangeType>
+        <AddressRangeParity>odd</AddressRangeParity>
+        <AddressRangeDirectionality>With</AddressRangeDirectionality>
+        <AddressRangeSpan>Entire Street</AddressRangeSpan>
+        <AddressClassification>NumberedThoroughfareAddress</AddressClassification>
+        <AddressFeatureType codeList="myUrl">House</AddressFeatureType>
+        <!-- Address Status Attributes -->
+        <AddressLifecycleStatus>Active</AddressLifecycleStatus>
+        <OfficialStatus>Official</OfficialStatus>
+        <AddressAnomalyStatus>no</AddressAnomalyStatus>
+        <!-- Address Side Attributes -->
+        <AddressSideOfStreet>right</AddressSideOfStreet>
+        <AddressRangeSide>left</AddressRangeSide>
+        
+        <AddressZLevel>0</AddressZLevel>
+        <LocationDescription>Historic Red Brick Colonial</LocationDescription>
+        <MailableAddress>Yes</MailableAddress>
+        <!-- Address Date Attributes -->
+        <AddressStartDate>18921214</AddressStartDate>
+        <AddressEndDate>20140331</AddressEndDate>
+        
+        <DataSetID>1258</DataSetID>
+        
+        <!-- Address Reference System Attributes -->
+        <AddressReferenceSystemId>1886</AddressReferenceSystemId>
+        <AddressReferenceSystemAuthority>Department of Urban Planning and Land Use</AddressReferenceSystemAuthority>
+    </NumberedThoroughfareAddress>
+    
+    <NumberedThoroughfareAddress action="ADD">
+        
+        <CompleteAddressNumber>
+            <AddressNumberPrefix Separator="">MILEPOST</AddressNumberPrefix>
+            <AddressNumber>72.9</AddressNumber>
+            </CompleteAddressNumber>
+         
+        <CompleteStreetName>
+            <StreetName>Main</StreetName>
+            <StreetNamePostType>Street</StreetNamePostType>
+        </CompleteStreetName>
+        <CompleteSubaddress>
+           <!--   <SubaddressElement ElementSequenceNumber="1" SubaddressComponentOrder="1">-->
+            <SubaddressElement>
+                <SubaddressType>Building</SubaddressType>
+                <SubaddressIdentifier>A</SubaddressIdentifier>
+            </SubaddressElement>
+        </CompleteSubaddress>
+        <CompletePlaceName>
+            <PlaceName GNISFeatureID="1658360">Buffalo Lake</PlaceName>
+        </CompletePlaceName>
+        <StateName>MN</StateName>
+        <ZipCode>55314</ZipCode>
+        <MapPosition>
+            <AddressPosition codeList="myUrl">Front Door </AddressPosition>
+            <gml:Point gml:id="p22" srsDimension="2"
+                srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                <gml:description>GPS location</gml:description>
+                <gml:pos>49.27 -123.11 </gml:pos>
+            </gml:Point>
+        </MapPosition>
+        <AddressId>01256</AddressId>
+        </NumberedThoroughfareAddress>
+    
+    <IntersectionAddress>
+        <CornerOf>South</CornerOf>
+        <CompleteStreetName>
+            <StreetName>Boardwalk</StreetName>
+        </CompleteStreetName>
+        <SeparatorElement>and</SeparatorElement>
+        <CompleteStreetName>
+            <StreetName>Park</StreetName>
+            <StreetNamePostType>Place</StreetNamePostType>
+        </CompleteStreetName>
+        <CompletePlaceName>
+            <PlaceName>Atlantic City</PlaceName>
+        </CompletePlaceName>
+        <StateName>NJ</StateName>
+        <MapPosition>
+            <AddressPosition> Natural Gas Direct Pipeline Connection </AddressPosition>
+            <gml:Point gml:id="p4">
+                <gml:pos>49.27 -123.11 </gml:pos>
+            </gml:Point> 
+        </MapPosition>
+        <AddressId>0112</AddressId>
+    </IntersectionAddress>
+
+    <TwoNumberAddressRange>
+        <CompleteAddressNumber>
+            <AddressNumber>401</AddressNumber>
+        </CompleteAddressNumber>
+        <SeparatorElement>-</SeparatorElement>
+        <CompleteAddressNumber>
+            <AddressNumber>418</AddressNumber>
+        </CompleteAddressNumber>
+        <CompleteStreetName>
+            <StreetName>Green</StreetName>
+            <StreetNamePostType>Street</StreetNamePostType>
+        </CompleteStreetName>
+        <CompletePlaceName>
+            <PlaceName>Flint</PlaceName>
+        </CompletePlaceName>
+        <StateName>MI</StateName>
+        <ZipCode>48503</ZipCode>
+        <MapPosition>
+            <AddressPosition> Driveway Entrance </AddressPosition>
+            <gml:Point gml:id="p5">
+                <gml:pos>49.27 -123.11 </gml:pos>
+            </gml:Point> 
+        </MapPosition>
+        <MapPosition>
+            <AddressPosition> Driveway Entrance </AddressPosition>
+            <gml:Point gml:id="p6">
+                <gml:pos>49.27 -123.12 </gml:pos>
+            </gml:Point> 
+        </MapPosition>
+        <AddressId>0113</AddressId>
+    </TwoNumberAddressRange>
+    
+    <FourNumberAddressRange>
+        <CompleteAddressNumber>
+            <AddressNumber>1900</AddressNumber>
+        </CompleteAddressNumber>
+        <SeparatorElement>-</SeparatorElement>
+        <CompleteAddressNumber>
+            <AddressNumber>1908</AddressNumber>
+        </CompleteAddressNumber>
+        <CompleteAddressNumber>
+            <AddressNumber>1901</AddressNumber>
+        </CompleteAddressNumber>
+        <SeparatorElement>-</SeparatorElement>
+        <CompleteAddressNumber>
+            <AddressNumber>1909</AddressNumber>
+        </CompleteAddressNumber>
+        <CompleteStreetName>
+            <StreetName>Bear</StreetName>
+            <StreetNamePostType>court</StreetNamePostType>
+        </CompleteStreetName>
+        <CompletePlaceName>
+            <PlaceName>Fort Collins</PlaceName>
+        </CompletePlaceName>
+        <StateName>CO</StateName>
+        <ZipCode>80525</ZipCode>
+        <MapPosition>
+            <AddressPosition>The driveway of 1900 Bear Court</AddressPosition>
+            <gml:Point  gml:id="p7">
+                <gml:pos>49.27 -123.11 </gml:pos>
+            </gml:Point>
+        </MapPosition>
+        <MapPosition>
+            <AddressPosition>The driveway of 1901 Bear Court</AddressPosition>
+            <gml:Point gml:id="p8">
+                <gml:pos>49.27 -123.12 </gml:pos>
+            </gml:Point> 
+        </MapPosition>
+        <MapPosition>
+            <AddressPosition>The driveway of 1908 Bear Court</AddressPosition>
+            <gml:Point gml:id="p9">
+                <gml:pos>49.28 -123.11 </gml:pos>
+            </gml:Point> 
+        </MapPosition>
+        <MapPosition>
+            <AddressPosition>The driveway of 1909 Bear Court</AddressPosition>
+            <gml:Point gml:id="p10">
+                <gml:pos>49.28 -123.12 </gml:pos>
+            </gml:Point> 
+        </MapPosition>
+        <AddressId>0114</AddressId>
+    </FourNumberAddressRange>
+  
+    <UnnumberedThoroughfareAddress>
+        <CompleteStreetName>
+            <StreetName>Fagaima</StreetName>
+            <StreetNamePostType>Road</StreetNamePostType>
+        </CompleteStreetName>
+        <CompletePlaceName>
+            <PlaceName>Nu'uli</PlaceName>
+        </CompletePlaceName>
+        <StateName>AS</StateName>
+        <ZipCode>96799</ZipCode>
+        <MapPosition>
+            <AddressPosition> Driveway Entrance </AddressPosition>
+            <gml:Point gml:id="p11">
+                <gml:pos>49.27 -123.12 </gml:pos>
+            </gml:Point> 
+        </MapPosition>
+        <AddressId>0115</AddressId>
+    </UnnumberedThoroughfareAddress>
+
+    <!-- Landmark classes (Landmark, Community-->
+    <LandmarkAddress>
+        <CompleteLandmarkName Separator="'">
+            <LandmarkName>Condominium Garden Hills Plaza</LandmarkName>
+        </CompleteLandmarkName>
+        <CompleteSubaddress>
+            <SubaddressElement SubaddressComponentOrder="1">
+                <SubaddressType>Torre</SubaddressType>
+                <SubaddressIdentifier>2</SubaddressIdentifier>
+            </SubaddressElement>
+            <SubaddressElement>
+                <SubaddressType>Apartamento</SubaddressType>
+                <SubaddressIdentifier>905</SubaddressIdentifier>
+            </SubaddressElement>
+        </CompleteSubaddress>
+        <CompletePlaceName>
+            <PlaceName>Mayaguez</PlaceName>
+        </CompletePlaceName>
+        <StateName>PR</StateName>
+        <ZipCode>00608</ZipCode>
+        <ZipPlus4>1233</ZipPlus4>
+        <MapPosition>
+            <AddressPosition> Parking Lot Entrance </AddressPosition>
+            <gml:Point gml:id="p12">
+                <gml:pos>49.27 -123.11 </gml:pos>
+            </gml:Point> 
+        </MapPosition>
+        <AddressId>0116</AddressId>
+    </LandmarkAddress>  
+    
+    <CommunityAddress>
+        <CompleteAddressNumber>
+            <AddressNumberPrefix>A</AddressNumberPrefix>
+            <AddressNumber>17</AddressNumber>
+        </CompleteAddressNumber>
+        <CompleteLandmarkName>
+            <LandmarkName>Jardine Fagota</LandmarkName>
+        </CompleteLandmarkName>
+        <CompletePlaceName>
+            <PlaceName>Ponce</PlaceName>
+        </CompletePlaceName>
+        <StateName>PR</StateName>
+        <ZipCode>00731</ZipCode>
+        <MapPosition>
+            <AddressPosition>Front Door </AddressPosition>
+            <gml:Point gml:id="p13">
+                <gml:pos>49.27 -123.11 </gml:pos>
+            </gml:Point> 
+        </MapPosition>
+        <AddressId>01256</AddressId>
+    </CommunityAddress>
+    
+    <!-- Postal Delivery Classes (USPS Postal Delivery Box, USPS Postal Delivery Route, USPS General Delivery Office -->
+    
+    <USPSPostalDeliveryBox>
+        <USPSBox>
+            <USPSBoxType>PO BOX</USPSBoxType>
+            <USPSBoxId>159753</USPSBoxId>
+        </USPSBox>
+        <CompleteSubaddress>
+            <SubaddressElement>
+                <SubaddressType>PMB</SubaddressType>
+                <SubaddressIdentifier>3571</SubaddressIdentifier>
+            </SubaddressElement>
+        </CompleteSubaddress>
+        <CompletePlaceName>
+            <PlaceName>Herndon</PlaceName>
+        </CompletePlaceName>
+        <StateName>VA</StateName>
+        <ZipCode>22071</ZipCode>
+        <MapPosition>
+            <AddressPosition>Mailboxes at Front Entrance to Housing Complex </AddressPosition>
+            <gml:Point gml:id="p14">
+                <gml:pos>49.27 -123.12 </gml:pos>
+            </gml:Point> 
+        </MapPosition>
+        <AddressId>0118</AddressId>
+    </USPSPostalDeliveryBox>
+    
+    <USPSPostalDeliveryRoute>
+        <USPSAddress>
+            <USPSRoute>
+                <USPSBoxGroupType>RR</USPSBoxGroupType>
+                <USPSBoxGroupId>2</USPSBoxGroupId>
+            </USPSRoute>
+            <USPSBox>
+                <USPSBoxType>Box</USPSBoxType>
+                <USPSBoxId>18</USPSBoxId>
+            </USPSBox>
+        </USPSAddress>
+        <CompletePlaceName>
+            <PlaceName>Largo</PlaceName>
+        </CompletePlaceName>
+        <StateName>FL</StateName>
+        <ZipCode>33777</ZipCode>
+        <MapPosition>
+            <AddressPosition>Mailboxes at Front Entrance to Housing Complex </AddressPosition>
+            <gml:Point gml:id="p15">
+                <gml:pos>49.27 -123.12 </gml:pos>
+            </gml:Point> 
+        </MapPosition>
+        <AddressId>0119</AddressId>
+    </USPSPostalDeliveryRoute>
+    
+    <USPSGeneralDeliveryOffice>
+        <USPSGeneralDeliveryPoint>General Delivery</USPSGeneralDeliveryPoint>
+        <CompletePlaceName>
+            <PlaceName>Tampa</PlaceName>
+        </CompletePlaceName>
+        <StateName>FL</StateName>
+        <ZipCode>33602</ZipCode>
+        <ZipPlus4>9999</ZipPlus4>
+        <AddressId>0120</AddressId>
+    </USPSGeneralDeliveryOffice>
+    
+    <!-- General Address Classes ( Type 1, Type 2, Type 3 ) -->
+    
+    <GeneralAddressClass>
+        <USPSGeneralDeliveryPoint>123 Main Street, Apt 1</USPSGeneralDeliveryPoint>
+        <CompletePlaceName>
+            <PlaceName>Ames</PlaceName>
+        </CompletePlaceName>
+        <StateName>IA</StateName>
+        <ZipCode>50010</ZipCode>
+        <AddressId>0126</AddressId>
+    </GeneralAddressClass>
+    
+    <GeneralAddressClass>
+        <USPSGeneralDeliveryPoint>123 Main Street, Apt 1</USPSGeneralDeliveryPoint>
+        <PlaceStateZip>Ames, IA 50010</PlaceStateZip>
+        <AddressId>0125</AddressId>
+    </GeneralAddressClass>
+    
+    <GeneralAddressClass>
+        <USPSGeneralDeliveryPoint>123 Main Street, Apt 1</USPSGeneralDeliveryPoint>
+        <CompletePlaceName>
+            <PlaceName>Ames</PlaceName>
+        </CompletePlaceName>
+        <StateName>IA</StateName>
+        <ZipCode>50010</ZipCode>
+        <AddressId>0126</AddressId>
+    </GeneralAddressClass>
+    
+    <!-- Address Reference System -->
+    <AddressReferenceSystem>
+        <AddressReferenceSystemId>1886</AddressReferenceSystemId>
+        <AddressReferenceSystemName>Amourdale</AddressReferenceSystemName>
+        <AddressReferenceSystemAuthority>Department of Urban Planning and Land Use </AddressReferenceSystemAuthority>
+        <AddressReferenceSystemExtent>
+            <gml:MultiSurface gml:id="A1886">
+                <gml:surfaceMember>
+                    <gml:Polygon gml:id="Armourdale1886">
+                        <gml:exterior>
+                            <gml:LinearRing>
+                                <gml:posList>1000 1001 1000 25000 200000 1000 200000 250000 1000
+                                    1000</gml:posList>
+                            </gml:LinearRing>
+                        </gml:exterior>
+                    </gml:Polygon>
+                </gml:surfaceMember>
+            </gml:MultiSurface>
+        </AddressReferenceSystemExtent>
+        <AddressReferenceSystemType>Grid</AddressReferenceSystemType>
+        <AddressReferenceSystemRules>
+            <AddressReferenceSystemNumberingRules>Odd numbers are on the south and west, and even
+                numbers on the north and east sides of all streets. There will be one address
+                increment allocated every 5.28 feet, resulting in 1000 addresses possible in each
+                mile of road. The addresses will increase by a value of one unit at each increment. </AddressReferenceSystemNumberingRules>
+            <AddressReferenceSystemStreetNamingRules> 1. Street names shall not be duplicated within
+                the extent of the City of Anywhere Address Reference System. 2. Streets running
+                north-south shall be numbered, beginning at Main Street, and shall be called
+                Avenues, while streets running east-west shall be given letter names (e.g. A, B, C)
+                and shall be Streets. 3. Street names that are vulgar, profane, obscene, or contain
+                racial, ethnic, religious, or sexual terms shall not be permitted. 4. Streets within
+                a subdivision shall have a theme, such as animals, birds, flowers, trees, etc. to
+                unify the street naming and give the subdivision identify. </AddressReferenceSystemStreetNamingRules>
+            <AddressReferenceSystemStreetTypeDirectionalAndModifierRules>
+                <!-- redone --> 1. Only those street types included in the Anytown Address Reference
+                System list of street types may be used in Anytown. 2. Prefix types may be used. 3.
+                Only the words "Old" and "New" may be used as Pre-Modifiers. The words "Extended,”
+                "Bypass" and "Overpass" may be used as postmodifiers. </AddressReferenceSystemStreetTypeDirectionalAndModifierRules>
+            <AddressReferenceSystemPlaceNameStateCountryAndZipCodeRules>
+                 Federal Geographic Data Committee FGDC Document Number
+                FGDC-STD-016-2011 United States Thoroughfare, Landmark, and Postal Address Data
+                Standard 209 1. "All addresses within the Extent of this Address Reference System
+                shall have the Municipal Place Name of "Anytown" and the State Name of "OHIO"." 2.
+                "The following community Place Names may be used within this Address Reference
+                System Extent: New Hope, Pine Level, Red Oak Village. The areas of these communities
+                are shown on the map attached to the Address Ordinance for Any County." </AddressReferenceSystemPlaceNameStateCountryAndZipCodeRules>
+            <AddressReferenceSystemSubaddressRules> 1. Apartments are addressed using a four digit
+                number where the first number represents the building, the second number the floor
+                on which the unit is located, and the third and fourth numbers the individual
+                apartment unit. 2. In a multi-story building, suites will be numbered in a clockwise
+                manner from the elevator lobby, using even numbers on the right hand side, and odd
+                numbers on the left hand side of the hallway. If the hallway is a single corridor,
+                then the numbers will be assigned from one end of the structure to the other, in the
+                same direction as the addresses on the street on which the building is addressed. </AddressReferenceSystemSubaddressRules>
+
+
+        </AddressReferenceSystemRules>
+        <AddressReferenceSystemAxis>
+            <gml:MultiCurve gml:id="p49">
+                <gml:curveMember>
+                    <gml:Curve gml:id="p50">
+                        <gml:segments>
+                            <gml:LineStringSegment>
+                                <gml:posList>1000 15000 20000 15000 </gml:posList>
+                            </gml:LineStringSegment>
+                        </gml:segments>
+                    </gml:Curve>
+                </gml:curveMember>
+            </gml:MultiCurve>
+        </AddressReferenceSystemAxis>
+        <AddressReferenceSystemAxisPointOfBeginning>
+            <gml:Point gml:id="p51">
+                <gml:pos>49.27 -123.11 </gml:pos>
+            </gml:Point>
+        </AddressReferenceSystemAxisPointOfBeginning>
+        <AddressReferenceSystemReferencePolyline>
+            <gml:MultiCurve gml:id="p52">
+                <gml:curveMember>
+                    <gml:Curve gml:id="p53">
+                        <gml:segments>
+                            <gml:LineStringSegment>
+                                <gml:posList>1000 15000 20000 15000 </gml:posList>
+                            </gml:LineStringSegment>
+                        </gml:segments>
+                    </gml:Curve>
+                </gml:curveMember>
+            </gml:MultiCurve>
+        </AddressReferenceSystemReferencePolyline>
+        <AddressReferenceSystemRangeBreakpoint>
+            <gml:Point gml:id="p54">
+                <gml:pos>15000 15000 </gml:pos>
+            </gml:Point>
+        </AddressReferenceSystemRangeBreakpoint>
+        <AddressReferenceSystemRangeBreakline>
+            <gml:MultiCurve gml:id="p55">
+                <gml:curveMember>
+                    <gml:Curve gml:id="p56">
+                        <gml:segments>
+                            <gml:LineStringSegment>
+                                <gml:posList>1000 15000 20000 15000 </gml:posList>
+                            </gml:LineStringSegment>
+                        </gml:segments>
+                    </gml:Curve>
+                </gml:curveMember>
+            </gml:MultiCurve>
+        </AddressReferenceSystemRangeBreakline>
+        <AddressReferenceSystemRangePolygon>
+            <gml:MultiSurface gml:id="p57">
+                <gml:surfaceMember>
+                    <gml:Polygon gml:id="p58">
+                        <gml:exterior>
+                            <gml:LinearRing>
+                                <gml:posList>1000 1000 1000 25000 20000 1000 20000 25000 1000
+                                    1000</gml:posList>
+                            </gml:LinearRing>
+                        </gml:exterior>
+                    </gml:Polygon>
+                </gml:surfaceMember>
+            </gml:MultiSurface>
+        </AddressReferenceSystemRangePolygon>
+        <AddressReferenceSystemReferenceDocumentCitation> "Rules for the Anytown Address Reference
+            System are found in the Anytown Address Ordinance, Chapter 15, Sections 1-29, of the
+            Anytown Municipal Code (www.ci.anytown.na.us)"
+        </AddressReferenceSystemReferenceDocumentCitation>
+    </AddressReferenceSystem>
+</addr:AddressCollection>

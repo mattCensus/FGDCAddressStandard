@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Revison Info
+    Revision Number            Date Made        Revised By            Revision       
+    1                          1/30/14          Census     Changed the AddressCollection's version attribute from "0.4" to "0.4.4"
+    2                          1/30/14          Census     Inserted the AddressId element      
+-->
+<addr:AddressCollection version="2.0" xmlns:addr="addr"
+    xmlns:addr_type="addr_type" xmlns:gml="http://www.opengis.net/gml"
+    xmlns:smil20="http://www.w3.org/2001/SMIL20/"
+    xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="addr addr.xsd ">
+    <LandmarkAddress>
+        <CompleteLandmarkName>
+            <LandmarkName>Condominium Garden Hills Plaza</LandmarkName>
+        </CompleteLandmarkName>
+        <CompleteSubaddress>
+            <SubaddressElement SubaddressComponentOrder="1">
+                <SubaddressType>Torre</SubaddressType>
+                <SubaddressIdentifier>2</SubaddressIdentifier>
+            </SubaddressElement>
+            <SubaddressElement>
+                <SubaddressType>Apartamento</SubaddressType>
+                <SubaddressIdentifier>905</SubaddressIdentifier>
+            </SubaddressElement>
+        </CompleteSubaddress>
+        <CompletePlaceName>
+            <PlaceName>Mayaguez</PlaceName>
+        </CompletePlaceName>
+        <StateName>PR</StateName>
+        <ZipCode>00608</ZipCode>
+        <ZipPlus4>1233</ZipPlus4>
+        <AddressId>0116</AddressId>
+    </LandmarkAddress>
+</addr:AddressCollection>

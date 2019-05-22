@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Revison Info
+    Revision Number            Date Made        Revised By            Revision       
+    1                          1/30/14          Census     Changed the AddressCollection's version attribute from "0.4" to "0.4.4"
+    2                          1/30/14          Census     Inserted the AddressId element      
+-->
+<addr:AddressCollection version="2.0" xmlns:addr="addr"
+    xmlns:addr_type="addr_type" xmlns:gml="http://www.opengis.net/gml"
+    xmlns:smil20="http://www.w3.org/2001/SMIL20/"
+    xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="addr addr.xsd ">
+    <FourNumberAddressRange>
+        <CompleteAddressNumber>
+            <AddressNumber>1900</AddressNumber>
+        </CompleteAddressNumber>
+        <SeparatorElement>-</SeparatorElement>
+        <CompleteAddressNumber>
+            <AddressNumber>1908</AddressNumber>
+        </CompleteAddressNumber>
+        <CompleteAddressNumber>
+            <AddressNumber>1901</AddressNumber>
+        </CompleteAddressNumber>
+        <SeparatorElement>-</SeparatorElement>
+        <CompleteAddressNumber>
+            <AddressNumber>1909</AddressNumber>
+        </CompleteAddressNumber>
+        <CompleteStreetName>
+            <StreetName>Bear</StreetName>
+            <StreetNamePostType>court</StreetNamePostType>
+        </CompleteStreetName>
+        <CompletePlaceName>
+            <PlaceName>Fort Collins</PlaceName>
+        </CompletePlaceName>
+        <StateName>CO</StateName>
+        <ZipCode>80525</ZipCode>
+        <AddressId>0114</AddressId>
+    </FourNumberAddressRange>
+</addr:AddressCollection>
